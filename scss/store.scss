@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{margin:0; padding:0;}
+/*use variable declaration start*/
+$font-Roboto :  'Roboto', sans-serif;
+$font-Montserrat:  'Montserrat', sans-serif;
+$color-yellow:  #ff9900;
+$color-buttun: #fff;
+$color-white:#fff;
+$background-black: #1c1d17;
+$hover-yellow: #ffb84d;
+$size-16: 16px;
+$size-14: 14px;
+body,a,span,ul,li,p,h1,h2,h3,h4,h5,h6,button,input,img,i {
+	transition: all .5s ease;
+}
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+a, a:hover, button {
+	text-decoration: none !important;
+	outline: none !important;
+}
+@import "maxin";
+/*HEADER START*/
+
+@import "header";
+.header-main{
+	a.dropdown-toggle::before{
+		width:0;
+	}
+	li.dropdown:hover .fa-search{
+		color: $color-yellow;
+	}
+}
+.main-container {
+	font-family: "Roboto", sans-serif;
+	margin: 20px 0;
+	.box-right-store {
+		margin-left: 0;
+	}
+	.slide-mobile{
+		.left-mobile{
+			border: 1px solid rgba(0,0,0,0.5);
+			padding: 0;
+			width: 100%;
+			margin-left: 15px;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			li.nav-item{
+				border-bottom: 1px solid rgba(0,0,0,0.5);
+				&:last-child {
+					border-bottom: none;
+				}
+				a{
+					color: black;
+				}
+			}
+			.current{
+				background-color: #f3c27ab8;
+			}
+		}
+		.sidebarBtn{
+			background-color: #fff;
+			width: 50px;
+			height: 50px;
+			padding: 10px 0;
+			border:1px solid $color-yellow;
+			margin-bottom: 10px;
+			.fa-plus{
+				font-size: 30px;
+				display: inline-block;
+				color: $color-yellow;
+			}
+		}
+	}
+}	
+/*HEADER END*/
+
+/*STORE START*/
+.main-container{
+	font-family: $font-Roboto;
+	margin: 30px 0;	
+	.service-left{
+		border: 1px solid rgba(0,0,0,0.5);
+		padding: 0;
+		height: 100%;
+		li.nav-item{
+			border-bottom: 1px solid rgba(0,0,0,0.5);
+			&:last-child {
+				border-bottom: none;
+			}
+			a{
+				color: black;
+			}
+			&:hover {
+				background-color: #f8c77d63;
+				cursor: pointer;
+			}
+		}
+		.current{
+			background-color: #f3c27ab8;
+		}
+	}
+	.box-right-store{
+		.store-item {
+			margin-bottom: 15px;
+		}
+		.quickview-button{
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			border: 1px solid rgba(0,0,0,0.1);
+			box-sizing: border-box;
+			border-radius: 4px;
+			img{
+				position: relative;
+				width: 100%;
+				top: 0;
+				left: 0;
+				border-radius: 4px;
+			}
+			.overlay {
+				background: rgba(0, 0, 0, 0.15);
+				height: 100%;
+				left: 0;
+				top: -100%;
+				width: 100%;
+				position: absolute;
+				-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				-o-transition: all 0.5s;
+				transition: all 0.5s;  
+				z-index: 0;
+			}
+			.quickview-item{
+				background:rgba(0,0,0,0.15);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+				color: #fff;
+				text-align: center;
+				width: 100%;
+				display: none;
+				-webkit-transition: all 30s;
+				-moz-transition: all 30s;
+				-o-transition: all 30s;
+				transition: all 30s;  
+				a{
+					color: #fff;
+					text-transform: capitalize;
+					border: none;
+					outline: none;
+				}
+			}
+			&:hover{
+				.overlay,{
+					top:0;
+				}
+				.quickview-item{
+					display: block;
+				}
+			}
+		}
+		.product-bottom{
+			text-align: center;
+			margin-top: 15px;
+			a{
+				color: black;
+				font-weight: 400;
+				font-size: 15px;
+			}
+			span{
+				display: block;
+				color: $color-yellow;
+			}
+			&:hover{
+				a{
+					color: $color-yellow;
+				}
+			}
+		}
+		.page-number{
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+/*STORE END*/
+/*POST MODAL START*/
+.view-main{
+	font-family: $font-Roboto ;
+	.view-img {
+		img{
+			width: 100%;
+		}
+	}
+	.view-title{
+		margin-left: 30px;
+		p{
+			font-size: 17px;
+			span{
+				font-size: 14px;
+				font-weight: 400;
+			}
+			&:last-child{
+				color: $color-yellow;
+				font-size: 24px;
+			}
+		}
+
+	}
+}
+
+/*POST MODAL END*/
+
+/*FOOTER START*/
+@import "footer";
+/*FOOTER END*/
+
+/*REPONSIVE TABLET  START*/
+@media (min-width: 575px) and (max-width: 768px) {
+	
+}			
+/*REPONSIVE TABLET  END*/
+
+/*REPONSIVE DESKTOP MIN START*/
+@media (min-width: 768px) and (max-width: 992px){
+	.main-container{
+		.box-right-store{
+			margin-left: 15px !important;
+		}
+	}
+}
+/*REPONSIVE DESKTOP END*/
+
+/*REPONSIVE DESKTOP MAX*/
+@media (min-width: 992px){
+	
+	/*box right*/
+	.main-container{
+		.box-right-store{
+			margin-left: 15px !important;
+		}
+	}
+}
