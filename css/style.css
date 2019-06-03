@@ -759,7 +759,7 @@ footer .go-up {
   font-size: 30px;
   position: fixed;
   z-index: 9999999;
-  right: 2%;
+  right: 5%;
   bottom: 20px;
   cursor: pointer;
   display: none;
@@ -1070,10 +1070,6 @@ footer .coppy-right {
 /*REPONSIVE DESKTOP END*/
 /*REPONSIVE DESKTOP MAX*/
 @media (min-width: 992px) {
-  .container {
-    border: 1px solid red !important;
-  }
-
   #section-services, #section-gallery, #section-shop, section#count-about, #section-blog, #section-contact {
     padding: 70px 0 !important;
   }

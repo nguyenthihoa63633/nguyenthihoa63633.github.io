@@ -727,10 +727,6 @@ a, a:hover, button {
 
 /*REPONSIVE DESKTOP MAX*/
 @media (min-width: 992px){
-
-	.container{
-		border:1px solid red !important;
-	}
 	#section-services, #section-gallery, #section-shop, section#count-about, #section-blog, #section-contact{
 		padding: 70px 0 !important;
 	}
