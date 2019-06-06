@@ -1,11 +1,19 @@
 $(document).ready(function(){
 	// scroll nav 
 	$(window).scroll(function(){
-	    if ($(window).scrollTop() >= 500) {
+	    if ($(window).scrollTop() >= 100) {
 	        $('nav').addClass('fixed-header');
 	    }
 	    else {
 	        $('nav').removeClass('fixed-header');
+	    }
+	});	
+	$(window).scroll(function(){
+	    if ($(window).scrollTop() >= 100) {
+	        $("#table-affix").addClass("fixed-menu");
+	    }
+	    else {
+	        $('nav').removeClass("fixed-menu");
 	    }
 	});	
 	// tab list

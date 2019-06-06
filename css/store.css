@@ -1,27 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/*header start*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*use variable declaration start*/
-body, a, span, ul, li, p, h1, h2, h3, h4, h5, h6, button, input, img, i {
-  transition: all .5s ease;
-}
-
-body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-a, a:hover, button {
-  text-decoration: none !important;
-  outline: none !important;
-}
-
-/*HEADER START*/
 * {
   margin: 0;
   padding: 0;
@@ -62,12 +40,12 @@ a, a:hover, button {
 }
 .header-top .line-right {
   border-left: 1px solid #f6ededc9;
-  font-size: 16px;
+  font-size: 14px;
 }
 .header-top .line-left {
   border-left: 1px solid #f6ededc9;
   border-right: 1px solid #f6ededc9;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .header-main {
@@ -197,53 +175,72 @@ a, a:hover, button {
   color: #ff9900;
 }
 
+/*header end*/
+.fixed-menu {
+  width: 20%;
+  top: 100px !important;
+  position: fixed;
+}
+
+/*product shop start*/
 .main-container {
   font-family: "Roboto", sans-serif;
   margin: 20px 0;
+  /*mobile btn start*/
+  /*mobile btn end*/
 }
-.main-container .box-right-store {
-  margin-left: 0;
+.main-container .btn-box {
+  margin-top: -20px;
 }
-.main-container .slide-mobile .left-mobile {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 0;
-  width: 100%;
-  margin-left: 15px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+.main-container .sidepanel {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-.main-container .slide-mobile .left-mobile li.nav-item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+.main-container .sidepanel a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: #fff;
 }
-.main-container .slide-mobile .left-mobile li.nav-item:last-child {
-  border-bottom: none;
-}
-.main-container .slide-mobile .left-mobile li.nav-item a {
-  color: black;
-}
-.main-container .slide-mobile .left-mobile .current {
-  background-color: #f3c27ab8;
-}
-.main-container .slide-mobile .sidebarBtn {
-  background-color: #fff;
-  width: 50px;
-  height: 50px;
-  padding: 10px 0;
-  border: 1px solid #ff9900;
-  margin-bottom: 10px;
-}
-.main-container .slide-mobile .sidebarBtn .fa-plus {
+.main-container .sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
   font-size: 30px;
-  display: inline-block;
+}
+.main-container .sidepanel ul {
+  height: 100%;
+}
+.main-container .sidepanel ul li {
+  width: 100%;
+  cursor: pointer;
+}
+.main-container .sidepanel ul hr {
+  width: 100%;
+  border-top: 1px solid rgba(252, 225, 58, 0.99);
+  margin: 0;
+}
+.main-container .sidepanel a:hover {
   color: #ff9900;
 }
-
-/*HEADER END*/
-/*STORE START*/
-.main-container {
-  font-family: "Roboto", sans-serif;
-  margin: 30px 0;
+.main-container .openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+}
+.main-container .openbtn:hover {
+  background-color: #171515;
 }
 .main-container .service-left {
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -345,7 +342,7 @@ a, a:hover, button {
   justify-content: center;
 }
 
-/*STORE END*/
+/*product shop e*/
 /*POST MODAL START*/
 .view-main {
   font-family: "Roboto", sans-serif;
@@ -435,6 +432,28 @@ footer .widget hr {
 footer .widget li:hover a {
   color: #ff9900;
 }
+footer .widget .about-widget .btn-subscrite {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #ca0909;
+  color: #fff;
+}
+footer .widget .about-widget .btn-subscrite:hover {
+  background: red;
+}
+footer .widget .about-widget ul li p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+footer .widget .about-widget ul li .fa-map-marker-alt, footer .widget .about-widget ul li .fa-envelope, footer .widget .about-widget ul li .fa-phone {
+  color: #ff9900;
+  margin-right: 10px;
+}
 footer .widget .link-widget ul li {
   justify-content: space-between;
   display: flex;
@@ -451,6 +470,7 @@ footer .widget .recent-post-widget a {
 }
 footer .widget .recent-post-widget a img {
   width: 100%;
+  height: 80px;
 }
 footer .widget .recent-post-widget a:hover {
   color: #ff9900;
@@ -462,6 +482,7 @@ footer .coppy-right {
 }
 
 /*FOOTER END*/
+/*share start*/
 .share {
   width: 40px;
   height: 40px;
@@ -473,18 +494,18 @@ footer .coppy-right {
   transform: translate(0, 0);
   z-index: 5;
 }
-.share #click-show-share {
-  width: 70%;
-  height: 70%;
+.share img#click-show-share {
+  width: 90%;
+  height: 90%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   border-radius: 50%;
-  transform: translate(0, 0);
+  transform: translate(-50%, -50%);
   transition: .3s ease-in-out;
   z-index: 333333333;
   cursor: pointer;
@@ -494,13 +515,10 @@ footer .coppy-right {
   box-sizing: border-box;
   border: 1px solid black;
 }
-.share #click-show-share:hover {
-  transform: rotate(45deg);
-  width: 100%;
-  height: 100%;
-}
-.share a.share-in {
-  text-decoration: none;
+.share img#click-show-share:hover {
+  transform: rotate(180deg);
+  left: 40%;
+  top: 25%;
 }
 .share .share-in {
   width: 100%;
@@ -531,7 +549,7 @@ footer .coppy-right {
 /*js share*/
 .show-share-in {
   left: 20px;
-  transform: translate(0, 250px) rotate(360deg);
+  transform: translate(0, 200px);
 }
 .show-share-in #click-show-share {
   transform: rotate(45deg);

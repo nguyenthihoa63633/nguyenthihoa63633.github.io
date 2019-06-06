@@ -30,8 +30,7 @@ a, a:hover, button {
 	justify-content: center;
 	align-items: center;
 	display: flex;
-
-	.icon{
+.icon{
 		.fa-facebook-square{
 			margin-left: 0;
 		}
@@ -42,14 +41,14 @@ a, a:hover, button {
 		}
 	}
 	.line-right{
-		border-left: 1px solid #f6ededc9; 
-		font-size: 16px;  
-	}
-	.line-left{
-		border-left: 1px solid #f6ededc9;
-		border-right: 1px solid #f6ededc9;
-		font-size: 16px;
-	}
+		border-left: 1px solid #f6ededc9;  
+        font-size: 14px; 
+    }
+    .line-left{
+      border-left: 1px solid #f6ededc9;
+      border-right: 1px solid #f6ededc9;
+      font-size: 14px;
+  }
 }
 .header-main{
 	font-family: $font-Montserrat;
@@ -171,7 +170,7 @@ a, a:hover, button {
 	}
 	.header-main{
 		ul.navbar-nav{
-		/*margin-left: auto !important;*/
+			margin-left: auto !important;
 		}
 		li{
 			font-size: 20px !important;
