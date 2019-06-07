@@ -1,20 +1,20 @@
 $(document).ready(function(){
 	// scroll nav 
+	// $(window).scroll(function(){
+	//     if ($(window).scrollTop() >= 100) {
+	//         $('nav').addClass('fixed-header');
+	//     }
+	//     else {
+	//         $('nav').removeClass('fixed-header');
+	//     }
+	// });	
 	$(window).scroll(function(){
-	    if ($(window).scrollTop() >= 100) {
-	        $('nav').addClass('fixed-header');
-	    }
-	    else {
-	        $('nav').removeClass('fixed-header');
-	    }
-	});	
-	$(window).scroll(function(){
-	    if ($(window).scrollTop() >= 100) {
-	        $("#table-affix").addClass("fixed-menu");
-	    }
-	    else {
-	        $('nav').removeClass("fixed-menu");
-	    }
+		if ($(window).scrollTop() >= 100) {
+			$("#table-affix").addClass("fixed-menu");
+		}
+		else {
+			$('table-affix').removeClass("fixed-menu");
+		}
 	});	
 	// tab list
 	$(".tab-content").hide();
@@ -48,4 +48,15 @@ $(document).ready(function(){
 	});
 	//  back-to-top end
 	
+	//  SHARE
+	//lấy giá trị
+	var share = document.querySelector('.share'),
+	clickShowShare = document.getElementById('click-show-share');	
+	clickShowShare.addEventListener('click', function(){
+		share.classList.toggle('show-share-in');
+	})
+
+	// *******************************************************************
+
 });
+

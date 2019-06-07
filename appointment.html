@@ -40,322 +40,331 @@
   </div>		
 </header>
 <!-- HEADER END -->
+
 <!--APPOINTMENT START-->
 <section id="section-appointment">
   <div class="container">
-   <div class="tab-content" >
-    <div class="tab-pane active" id="booking">
-     <div class="tab-main">
-      <form class="form-horizontal col-12 offset-sm-1 col-sm-10 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
-        <p class="theme-text">Please enter your info below </p>
-        <div class="customer-info-block">
-          <div class="form-group d-flex">
-            <div class='gender-container col-4 col-sm-4 col-md-4 col-lg-4 p-0 '>
-              <select id ="gender" name="gender" class="form-control selec2 " value="F" data-minimum-results-for-search="-1">
-                <option value = "M" >Mr</option>
-                <option value = "F"  selected >Mrs/Miss</option>
-              </select>
-            </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 full-name ">
-             <input  type="text" name="customer_name" maxlength="50" value="" placeholder="Full name" id="customer_name" class="form-control"/>
-           </div>
-         </div>
-         <div class="form-group">
-           <div >
-             <input type="email" name="email" placeholder="Email" id="email" class="form-control"  value=""  required/>
-           </div>
-         </div>
-         <div class="form-group">
-           <div class="">
-             <input type="tel" name="mobile" placeholder="Phone number" id="mobile" class="form-control" min="0" value="" />
-           </div>
-         </div>
-
-       </div>
-       <!-- end info -->
-       <!--selectTime   -->
-       <div  id="productSetting" class="row">
-        <div class="container px-0">
-          <p class="choose-title col-12 col-sm-12 col-md-12 col-lg-12 ">Choose services</p>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <select class="js-example-basic-multiple col-12 col-sm-12 col-md-12 col-lg-12" name="states[]" multiple="multiple">
-              <option value="section-0">Toner only</option>
-              <option value="section-1">Man Hair Cut Card</option>
-              <option value="section-2">Shampoo Card</option>
-              <option value="section-3">Full head highlight </option>
-              <option value="section-4">Bang's Cut </option>
-              <option value="section-5">Kid hair cut </option>
-              <option value="section-6">Skin Peeling </option>
-              <option value="section-7">Style Hair </option>
-              <option value="section-8">Hair Straightening </option>
-              <option value="section-9">Hair Bleaching</option>
-              <option value="section-10">Standard Shampoo</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      
-      <div class="booking-service-info ">
-        <div class="booking-info">
-         <div class="py-3 theme-text">Appointment date: </div>
-         <div class="col-12 col-sm-12 col-md-12 col-lg-12 item-date px-0 mb-3">
-          <input type="date" name="bday" id="datePicker" class="form-control col-7 col-sm-7 col-md-7 col-lg-7">
-          <!--  <input type="button" value="date" id="datebtn" class="form-control col-4 col-sm-4 offset-1 col-md-4 col-lg-4"> -->
-        </div>
-        <!-- show choose date -->
-        <!-- <div class="show-date d-flex ">
-          <p class="col-7 px-0">You set the date schedule: </p>
-          <p class="getDate col-5 col-sm-5 col-md-5 col-lg-5 px-0 text-right" style = "color:#ff9900 "></p>
-        </div> -->
-      </div>
-      <div id="selectTime" class="col-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="row">
-          <div class="container px-0">
-           <ul class="button-time nav">
-            <li class="nav-item show-item  col-3"><a class="nav-link" href="#tab-1"> Morning</a></li>
-            <li class="nav-item col-3"><a class="nav-link" href="#tab-2">  Afternoon</a></li>
-            <li class="nav-item col-3"><a class="nav-link" href="#tab-3">Evening</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="time-main"> 
-        <div class="row">
-          <div class="container px-0">
-            <div class="col-12 col-sm-12 px-0">
-              <p id="time-select">Appointment time(*)</p>
-              <div class="timeFrame container col-12 col-sm-12 p-0">
-                <div id="tab-1" class="box-content">
-                  <button type="button " class="btn p-10 full-place">
-                    <div class="time">09:00</div>
-                    <div class="end-solot " >full place</div>
-                  </button>
-                  <button type="button" class="btn p-10  full-place ">
-                    <div class="time">09:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">09:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">09:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">10:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">10:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">10:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">10:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">11:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">11:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">11:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">11:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">12:00</div>
-                    <div class="solot">still place</div>
-                  </button> 
+    <div class="tab-content" >
+      <div class="tab-pane active" id="booking">
+        <div class="tab-main">
+          <form class="form-horizontal col-12 offset-sm-1 col-sm-10 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+            <p class="theme-text">Please enter your info below </p>
+            <div class="customer-info-block">
+              <div class="form-group d-flex">
+                <div class='gender-container col-4 col-sm-4 col-md-4 col-lg-4 p-0 '>
+                  <select id ="gender" name="gender" class="form-control selec2 "  data-minimum-results-for-search="-1">
+                    <option value = "M" >Mr</option>
+                    <option value = "F"  selected >Mrs/Miss</option>
+                  </select>
                 </div>
-                <!-- box morning -->
-                <div id="tab-2" class="box-content">
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">12:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">12:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">12:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">13:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">13:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">13:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">13:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">14:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">14:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">14:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">14:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">15:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">15:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">15:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">15:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">16:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">16:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">16:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">16:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">17:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">17:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">17:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">17:45</div>
-                    <div class="solot">still place</div>
-                  </button>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 full-name ">
+                  <input  type="text" name="customer_name" maxlength="50" value="" placeholder="Full name" id="customer_name" class="form-control"/>
                 </div>
-                <!-- box afternoon-->
-                <div id="tab-3" class="box-content">
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">18:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">18:15</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">18:30</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">18:45</div>
-                    <div class="solot">still place</div>
-                  </button>
-                  <button type="button" class="btn p-10 still-place">
-                    <div class="time">19:00</div>
-                    <div class="solot">still place</div>
-                  </button>
-                </div>
-                <!-- box evening -->
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email" id="email" class="form-control"  value=""  required/>
+              </div>
+              <div class="form-group">
+                <input type="tel" name="mobile" placeholder="Phone number" id="mobile" class="form-control"  value="" />
+              </div>
+              <div class="form-group">
+                <select id ="brand" name="brand" class="form-control selec2 "  data-minimum-results-for-search="-1">
+                  <option value = "brand1" selected> 7  Do Trung, Trung Hoa, Cau Giay , Ha Noi</option>
+                  <option value = "brand2">215 Nguyen Duc Chinh, Ba Dinh, Ha Noi</option>
+                </select>
               </div>
             </div>
-          </div>
+            <!-- end info -->
+            <!--selectTime   -->
+            <div  id="productSetting" class="row">
+              <div class="container px-0">
+                <p class="choose-title col-12 col-sm-12 col-md-12 col-lg-12 ">Choose services</p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                  <select class="js-example-basic-multiple col-12 col-sm-12 col-md-12 col-lg-12 " name="states[]" multiple="multiple">
+                    <option value="section-0">Toner only</option>
+                    <option value="section-1">Man Hair Cut Card</option>
+                    <option value="section-2">Shampoo Card</option>
+                    <option value="section-3">Full head highlight </option>
+                    <option value="section-4">Bang's Cut </option>
+                    <option value="section-5">Kid hair cut </option>
+                    <option value="section-6">Skin Peeling </option>
+                    <option value="section-7">Style Hair </option>
+                    <option value="section-8">Hair Straightening </option>
+                    <option value="section-9">Hair Bleaching</option>
+                    <option value="section-10">Standard Shampoo</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="booking-service-info ">
+              <div class="booking-info">
+                <div class="py-3 theme-text">Appointment date: </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 item-date px-0 mb-3">
+                  <input type="date" name="bday" id="datePicker" class="form-control col-7 col-sm-7 col-md-7 col-lg-7">         
+                </div>
+              </div>
+              <!-- chon gio dat lich -->
+              <div id="selectTime" class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="container px-0">
+                    <ul class="button-time nav">
+                      <li class="nav-item show-item  col-3"><a class="nav-link" href="#tab-1"> Morning</a></li>
+                      <li class="nav-item col-3"><a class="nav-link" href="#tab-2">  Afternoon</a></li>
+                      <li class="nav-item col-3"><a class="nav-link" href="#tab-3">Evening</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="time-main"> 
+                  <div class="row">
+                    <div class="container px-0">
+                      <div class="col-12 col-sm-12 px-0">
+                        <p id="time-select">Appointment time(*)</p>
+                        <div class="timeFrame container col-12 col-sm-12 p-0">
+                          <div id="tab-1" class="box-content">
+                            <button type="button " class="btn p-10 full-place">
+                              <div class="time">09:00</div>
+                              <div class="end-solot " >full place</div>
+                            </button>
+                            <button type="button" class="btn p-10  full-place ">
+                              <div class="time">09:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">09:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">09:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">10:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">10:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">10:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">10:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">11:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">11:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">11:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">11:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">12:00</div>
+                              <div class="solot">still place</div>
+                            </button> 
+                          </div>
+                          <!-- box morning -->
+                          <div id="tab-2" class="box-content">
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">12:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">12:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">12:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">13:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">13:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">13:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">13:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">14:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">14:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">14:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">14:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">15:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">15:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">15:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">15:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">16:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">16:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">16:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">16:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">17:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">17:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">17:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">17:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                          </div>
+                          <!-- box afternoon-->
+                          <div id="tab-3" class="box-content">
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">18:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">18:15</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">18:30</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">18:45</div>
+                              <div class="solot">still place</div>
+                            </button>
+                            <button type="button" class="btn p-10 still-place">
+                              <div class="time">19:00</div>
+                              <div class="solot">still place</div>
+                            </button>
+                          </div>
+                          <!-- box evening -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- note start -->
+              <div id="comment col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="container px-0">
+                    <p class="choose-title col-12 col-sm-12 col-md-12 col-lg-12 " style="color:  #007bff;">Note:</p>
+                    <div class=" mb-3 col-12 col-sm-12 col-md-12 col-lg-12">
+                      <textarea id="note" class="form-control " rows="5" placeholder="Notes"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center  col-12 col-sm-12 col-md-12 col-lg-12 px-0">
+                <button type="submit" class="btn book btn-block" id="ok" >
+                  <i class="far fa-calendar-alt"></i>
+                  <span>Book Appointment</span> 
+                </button>
+              </div>
+            </div>
+          </form> 
+          <!-- form end -->
         </div>
       </div>
     </div>
-    <!-- note start -->
-    <div id="comment col-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="row">
-        <div class="container px-0">
-          <p class="choose-title col-12 col-sm-12 col-md-12 col-lg-12 " style="color:  #007bff;">Note:</p>
-          <div class=" mb-3 col-12 col-sm-12 col-md-12 col-lg-12">
-            <textarea id="note" class="form-control " placeholder="Notes"></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center  col-12 col-sm-12 col-md-12 col-lg-12 px-0">
-      <button type="submit" class="btn book btn-block" id="ok" >
-        <i class="far fa-calendar-alt"></i>
-        <span>Book Appointment</span> 
-      </button>
-    </div>
-  </form> 
-  <!-- form end -->
-</div>
-</div>
-</div>
-</div>
+  </div>
 </section>
 
 <!-- APPOINTMENT END--> 
 <!-- FOOTER START -->
-<footer class="section-footer  p-5"> 
+<footer class="section-footer py-4"> 
+  <!-- share btn start -->
+  <div class="share">
+    <a href="#" class="share-in"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="share-in"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="share-in"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="share-in"><i class="fab fa-google-plus-g"></i></a>
+    <a href="#" class="share-in"><i class="fab fa-youtube"></i></a>
+    <img src="img/plus-button.png" alt="" id="click-show-share">
+  </div>
+  <!-- share btn end -->
+
   <!--Go Up Button-->
   <div class="container">
     <div class="go-up ">
       <i class="fas fa-arrow-up"></i>
     </div>
   </div>
-
-  <div class="row ">
-    <div class="container d-lg-flex px-0">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+  <!-- go up button end -->
+  <div class=" container ">
+    <div class="row d-lg-flex">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 ">
         <div class="widget">
           <div class="logo-title">
-            <h4>Em Salon</h4> 
+            <h4>Newsltter</h4>
             <hr>
           </div>
           <div class="about-widget">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iste, veniam modi aspernatur doloremque, dolorum.
-            </p>
-            <a href="#" class="btn btn-primary"> Read More</a>
+            <p >Sign up for the latest news, offters and styles</p>
+            <form action="" method="POST" class="text-center">
+              <input  class="form-control" type="email" placeholder="Your email">
+              <button type="submit" class=" mt-3 btn-subscrite">Subscrite</button>
+            </form>
           </div>
         </div>
       </div>
       <!-- end col -->
-      <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 ">
         <div class="widget">
           <div class="widget-title">
             <h4>Working House</h4>
@@ -363,99 +372,71 @@
           </div>   
           <div class="link-widget ">
             <ul class="nav flex-column ">
-              <li class="nav-item  ">
-                MONDAY<span>09:00 - 19:00</span>
-              </li>
-              <li class="nav-item">
-                TUESDAY<span>09:00 - 19:00</span>
-              </li>
-              <li class="nav-item">
-                WEDNESDAY<span>09:00 - 19:00</span>
-              </li>
-              <li class="nav-item">
-               THURSDAY<span>09:00 - 19:00</span>
-             </li>
-             <li class="nav-item">
-               FRIDAY<span>09:00 - 19:00</span>
-             </li>
-             <li class="nav-item">
-              SATURDAY<span>09:00 - 19:00</span>
-            </li>
-            <li class="nav-item">
-              SUNDAY<span>09:00 - 19:00</span>
-            </li>
+              <li class="nav-item  ">MONDAY<span>09:00 - 19:00</span> </li>
+              <li class="nav-item">TUESDAY<span>09:00 - 19:00</span></li>
+              <li class="nav-item">WEDNESDAY<span>09:00 - 19:00</span></li>
+              <li class="nav-item">THURSDAY<span>09:00 - 19:00</span></li>
+              <li class="nav-item"> FRIDAY<span>09:00 - 19:00</span> </li>
+              <li class="nav-item">SATURDAY<span>09:00 - 19:00</span></li>
+              <li class="nav-item">SUNDAY<span>09:00 - 19:00</span></li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+      <!-- end col -->
+
+      <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block">
+        <div class="widget">
+          <div class="widget-title">
+            <h4>Site Links</h4>
+            <hr>
+          </div>
+          <ul class="nav flex-column ">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link" >Services</a></li>
+            <li class="nav-item"> <a href="gallery.html" class="nav-link ">Gallery</a></li>
+            <li class="nav-item"><a href="store.html" class="nav-link" >Shop</a> </li>
+            <li class="nav-item"><a href="blog.html" class="nav-link" >Blog</a></li>
+            <li class="nav-item"><a href="appointment.html" class="nav-link" >Appointment</a></li>
           </ul>
-        </div> 
+        </div>
       </div>
+      <!-- end col -->
+      <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block ">
+        <div class="widget">
+          <div class="widget-title">
+            <h4>Recent Posts</h4>
+            <hr>
+          </div>
+          <div class=" row recent-post-widget  mb-3">
+            <div class=" col-4 col-sm-3 col-md-3 col-lg-4">
+              <a href="blog.html"><img src="img/hair1.png" alt="images blog em salon" ></a>
+            </div>
+            <div class="col-8 col-sm-9 col-md-9 col-lg-8">
+              <p  class="mb-0"><a href="blog.html">Model hair HOT in 2019</a></p>
+              <span>2 May 2019</span>
+            </div>
+          </div>
+          <div class=" row recent-post-widget ">
+            <div class="col-4 col-sm-3 col-md-3 col-lg-4">
+              <a href="blog.html"><img src="img/hair2.png" alt="images blog em salon"></a>
+            </div>
+            <div class="col-8 col-sm-9 col-md-9 col-lg-8">
+              <p  class="mb-0"><a href="blog.html">Model hair HOT in 2019</a></p>
+              <span>2 May 2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end-col -->
     </div>
-    <!-- end col -->
-
-    <div class="col-12 col-sm-12 col-md-12 col-lg-3 ">
-      <div class="widget">
-        <div class="widget-title">
-          <h4>Site Links</h4>
-          <hr>
-        </div>
-        <ul class="nav flex-column ">
-         <li class="nav-item">
-          <a href="index.html" class="nav-link ">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="service.html" class="nav-link active" >Services</a>
-        </li>
-        <li class="nav-item">
-          <a href="gallery.html" class="nav-link ">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a href="store.html" class="nav-link" >Shop</a>
-        </li>
-        <li class="nav-item">
-          <a href="blog.html" class="nav-link" >Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="#section-contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- end col -->
-  <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-    <div class="widget">
-      <div class="widget-title">
-        <h4>Recent Posts</h4>
-        <hr>
-      </div>
-      <div class=" row recent-post-widget  mb-3">
-
-        <div class=" col-4 col-sm-4 col-md-4 col-lg-4">
-          <a href="blog.html"><img src="img/hair1.png" alt="images blog em salon" ></a>
-        </div>
-        <div class="col-8 col-sm-4 col-md-8 col-lg-8">
-          <p><a href="blog.html">Model hair HOT in 2019</a></p>
-          <span>2 May 2019</span>
-        </div>
-      </div>
-      <div class=" row recent-post-widget ">
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-          <a href="blog.html"><img src="img/hair2.png" alt="images blog em salon"></a>
-        </div>
-        <div class="col-8 col-sm-4 col-md-8 col-lg-8">
-          <p><a href="blog.html">Model hair HOT in 2019</a></p>
-          <span>2 May 2019</span>
-        </div>
-      </div>
+  </div>  
+  <!-- row end -->
+  <div class="coppy-right">
+    <div class="container">    
+      <p>© 2019 EM Hair Salon All rights reserved.</p>      
     </div>
   </div>
-  <!-- end-col -->
-</div>
-</div>  
-<div class="coppy-right">
-  <div class="container">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-      <p>© 2019 EM Hair Salon All rights reserved.</p>
-    </div>
-  </div>
-</div>
 </footer>
 <!-- FOOTER END -->
 <script src="js/jquery-3.3.1.min.js"></script>

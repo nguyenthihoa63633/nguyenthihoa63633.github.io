@@ -11,9 +11,9 @@
 }
 /*header end*/
 .fixed-menu{
-	width: 20%;
-	top: 100px !important;
-	position: fixed;
+	width: 100%;
+	top: 0 !important;
+	position: sticky;
 
 }
 /*product shop start*/
@@ -221,6 +221,7 @@
 	.main-container{
 		.box-right-store{
 			margin-left: 15px !important;
+			padding-top: 130px;
 		}
 	}
 }

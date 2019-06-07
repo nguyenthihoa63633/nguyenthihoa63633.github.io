@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
 *{margin:0; padding:0;}
 /*use variable declaration start*/
 $font-Roboto :  'Roboto', sans-serif;
@@ -24,6 +23,12 @@ a, a:hover, button {
 .header-top {
 	background: #1c1d17;
 	color: #fff;
+	.fixed-header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
 	.header-left {
 		width: 100%;
 		.logo{
@@ -50,6 +55,7 @@ a, a:hover, button {
 	}
 }
 /*heder end*/
+
 /*appointment start*/
 #section-appointment{
 	padding:20px 0;
@@ -198,98 +204,11 @@ a, a:hover, button {
 		}
 	}
 }
-
-
 /*appointment end*/
 /*FOOTER START*/
-footer{
-	background: url(../img/footer.jpg) no-repeat center center;
-	background-size: cover;
-	color: #fff;
-	position: relative;
-	.go-up{
-		font-size: 30px;
-		position: fixed;
-		z-index: 9999999;
-		right: 1%;
-		bottom:40px;
-		cursor: pointer;
-		display: none;
-		width: 50px;
-		height: 50px;
-		border: 1px solid $color-yellow;
-		background-color: #fff;
-		text-align: center;
-		line-height: 50px;
-		box-sizing: border-box;
-		border-radius: 5px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-transition: all 0.34s linear;
-		-moz-transition: all 0.4s ease;
-		-ms-transition: all 0.4s ease;
-		-o-transition: all 0.4s ease;
-		transition: all 0.4s ease;
-		&:hover{
-			background-color:$color-yellow;
-			.fa-arrow-up{
-				top:40%;
-			}
-		}
-		.fa-arrow-up{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-50%);
-			color: black;
-			font-size: 18px;
-			-webkit-transition: all 0.34s linear;
-			-moz-transition: all 0.4s ease;
-			-ms-transition: all 0.4s ease;
-			-o-transition: all 0.4s ease;
-			transition: all 0.4s ease;
-		}
-	}
-	.widget{
-		margin-bottom: 30px;
-		h4{
-			font-size: 16px;
-			font-weight: 700;
-		}
-		hr{
-			width: 60px;
-			border-top: 2px solid  $color-yellow;
-		}
-		li:hover a{
-			color: $color-yellow;
-		}
-		.link-widget{
-			ul{
-				li{
-					justify-content: space-between;
-					display: flex;
-				}		
-			}
-		}
-		.nav-link{
-			color: #fff;
-			padding: 0;
-		}
-		.recent-post-widget{
-			display: flex;
-			a{
-				color: #fff;
-				img{
-					width:100%;
-				}
-				&:hover{
-					color: $color-yellow;
-				}
-			}
-		}
-	}
-}
+@import "footer";
 /*FOOTER END*/
+
 /*REPONSIVE TABLET  START*/
 @media (min-width: 575px) and (max-width: 768px) {
 	.header-top{
@@ -298,13 +217,11 @@ footer{
 		}
 	}	
 }
-
 /*REPONSIVE TABLET  END*/
 
 /*REPONSIVE DESKTOP MIN START*/
 @media (min-width: 768px) and (max-width: 991px){
 	
-	/* heaer end*/
 }
 /*REPONSIVE DESKTOP END*/
 

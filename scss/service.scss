@@ -36,58 +36,8 @@ a, a:hover, button {
 		color: $color-yellow;
 	}
 }
-/*.header-main{
-	a.dropdown-toggle::before{
-		width:0;
-	}
-	li.dropdown:hover .fa-search{
-		color: $color-yellow;
-	}
-	input.form-control {
-		border-radius: 50px;
-		border-top-right-radius: 50px !important;
-		border-bottom-right-radius: 50px !important; 
-	}
-	.search{
-		position: absolute;
-		top: 50%;
-		transform: translate(0, -50%);
-	}
-	.search input{
-		outline: none;
-		width: 50px;
-		padding-left: 50px;
-		border: 2px solid white;
-		transition: width .7s ease-in-out;
-		background: rgba(0,0,0,.4);
-		color: white;
-		font-family: sans-serif;
-
-	}
-	.search input:focus{
-		width: 270px;
-		padding-left: 10px;
-		padding-right: 30px;
-		background: rgba(0,0,0,.4);
-	}
-	.search svg.svg-inline--fa.fa-search.fa-w-16{
-		position: absolute;
-		right: 10px;
-		top: 50%;
-		transform: translate(0, -50%);
-		color: white;
-		cursor: pointer;
-	}
-	.search:hover{
-		svg.svg-inline--fa.fa-search.fa-w-16{
-			color: $color-yellow;
-		}
-	}
-}*/
-/*HEADER END*/
 
 /*SERVICE START */
-
 .wap-service{
 	ul{
 		list-style-type: none;	

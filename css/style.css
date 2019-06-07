@@ -238,7 +238,7 @@ a, a:hover, button {
 }
 #about .section-about .about-img .about-iems img {
   width: 100%;
-  margin: 0 -15px;
+  height: 250px;
 }
 #about ul {
   list-style: none;
@@ -741,6 +741,9 @@ a, a:hover, button {
 #section-contact .location ul li .nav-link:hover {
   color: #ff9900;
 }
+#section-contact .form {
+  margin-top: 20px;
+}
 #section-contact .form .input-group-addon {
   height: 48px;
   line-height: 48px;
@@ -1089,6 +1092,9 @@ footer .coppy-right {
     padding-bottom: 0;
     height: 100% !important;
   }
+  #about .section-about .about-img img {
+    height: auto !important;
+  }
 
   /*section-services start*/
   #section-services .wrap-service .wrap-box {
@@ -1235,6 +1241,11 @@ footer .coppy-right {
     height: 45px;
     color: #fff;
     margin-right: 0;
+  }
+}
+@media (min-width: 1140px) {
+  #section-contact .form {
+    margin-top: 0 !important;
   }
 }
 

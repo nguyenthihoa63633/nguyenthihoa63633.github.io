@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	// scroll nav 
 	$(window).scroll(function(){
-		if ($(window).scrollTop() >= 500) {
+		if ($(window).scrollTop() >= 300) {
 			$('nav').addClass('fixed-header');
 		}
 		else {
@@ -20,8 +20,9 @@ $(document).ready(function(){
 		"<i class='fas fa-caret-right'></i>"
 		],
 		autoplay: true,
+    	autoplayTimeout:2000,
 		smartSpeed: 1000,
-		autoplayHoverPause: true,
+		autoplayHoverPause: false,
 		responsive: {
 			0: {
 				items: 2
@@ -34,28 +35,7 @@ $(document).ready(function(){
 			}
 		}
 	}) // end owl-carousel section shop
-	// countup
-	// var runCount = $("#count-about").offset().top;
-	// $(window).scroll(function(){
-	// 	$('.counter').each(function() {
-	// 		var $this = $(this),
-	// 		countTo = $this.attr('data-count');
-			
-	// 		$({ countNum: $this.text()}).animate({
-	// 			countNum: countTo
-	// 		},{
-	// 			duration: 8000,
-	// 			easing:'linear',
-	// 			step: function() {
-	// 				$this.text(Math.floor(this.countNum));
-	// 			},
-	// 			complete: function() {
-	// 				$this.text(this.countNum);
-	// 			}
-	// 		}); 
-	// 	});
-	// });
-	//  back-to-top start
+	
 	$(window).scroll(function(){
 		if($(this).scrollTop()>100){
 			$(".go-up").fadeIn();
@@ -69,7 +49,6 @@ $(document).ready(function(){
 	});
 	//  back-to-top end
 	//  SHARE
-	//lấy giá trị
 	var share = document.querySelector('.share'),
 	clickShowShare = document.getElementById('click-show-share');	
 	clickShowShare.addEventListener('click', function(){

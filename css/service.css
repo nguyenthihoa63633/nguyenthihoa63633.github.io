@@ -61,12 +61,12 @@ a, a:hover, button {
 }
 .header-top .line-right {
   border-left: 1px solid #f6ededc9;
-  font-size: 16px;
+  font-size: 14px;
 }
 .header-top .line-left {
   border-left: 1px solid #f6ededc9;
   border-right: 1px solid #f6ededc9;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .header-main {
@@ -182,7 +182,7 @@ a, a:hover, button {
   }
 
   .header-main ul.navbar-nav {
-    /*margin-left: auto !important;*/
+    margin-left: auto !important;
   }
   .header-main li {
     font-size: 20px !important;
@@ -200,55 +200,6 @@ a, a:hover, button {
   color: #ff9900;
 }
 
-/*.header-main{
-	a.dropdown-toggle::before{
-		width:0;
-	}
-	li.dropdown:hover .fa-search{
-		color: $color-yellow;
-	}
-	input.form-control {
-		border-radius: 50px;
-		border-top-right-radius: 50px !important;
-		border-bottom-right-radius: 50px !important; 
-	}
-	.search{
-		position: absolute;
-		top: 50%;
-		transform: translate(0, -50%);
-	}
-	.search input{
-		outline: none;
-		width: 50px;
-		padding-left: 50px;
-		border: 2px solid white;
-		transition: width .7s ease-in-out;
-		background: rgba(0,0,0,.4);
-		color: white;
-		font-family: sans-serif;
-
-	}
-	.search input:focus{
-		width: 270px;
-		padding-left: 10px;
-		padding-right: 30px;
-		background: rgba(0,0,0,.4);
-	}
-	.search svg.svg-inline--fa.fa-search.fa-w-16{
-		position: absolute;
-		right: 10px;
-		top: 50%;
-		transform: translate(0, -50%);
-		color: white;
-		cursor: pointer;
-	}
-	.search:hover{
-		svg.svg-inline--fa.fa-search.fa-w-16{
-			color: $color-yellow;
-		}
-	}
-}*/
-/*HEADER END*/
 /*SERVICE START */
 .wap-service {
   /*service left start*/
@@ -418,6 +369,28 @@ footer .widget hr {
 footer .widget li:hover a {
   color: #ff9900;
 }
+footer .widget .about-widget .btn-subscrite {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #ca0909;
+  color: #fff;
+}
+footer .widget .about-widget .btn-subscrite:hover {
+  background: red;
+}
+footer .widget .about-widget ul li p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+footer .widget .about-widget ul li .fa-map-marker-alt, footer .widget .about-widget ul li .fa-envelope, footer .widget .about-widget ul li .fa-phone {
+  color: #ff9900;
+  margin-right: 10px;
+}
 footer .widget .link-widget ul li {
   justify-content: space-between;
   display: flex;
@@ -434,6 +407,7 @@ footer .widget .recent-post-widget a {
 }
 footer .widget .recent-post-widget a img {
   width: 100%;
+  height: 80px;
 }
 footer .widget .recent-post-widget a:hover {
   color: #ff9900;
@@ -445,6 +419,7 @@ footer .coppy-right {
 }
 
 /*FOOTER END*/
+/*share start*/
 .share {
   width: 40px;
   height: 40px;
@@ -456,18 +431,18 @@ footer .coppy-right {
   transform: translate(0, 0);
   z-index: 5;
 }
-.share #click-show-share {
-  width: 70%;
-  height: 70%;
+.share img#click-show-share {
+  width: 90%;
+  height: 90%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   border-radius: 50%;
-  transform: translate(0, 0);
+  transform: translate(-50%, -50%);
   transition: .3s ease-in-out;
   z-index: 333333333;
   cursor: pointer;
@@ -477,13 +452,10 @@ footer .coppy-right {
   box-sizing: border-box;
   border: 1px solid black;
 }
-.share #click-show-share:hover {
-  transform: rotate(45deg);
-  width: 100%;
-  height: 100%;
-}
-.share a.share-in {
-  text-decoration: none;
+.share img#click-show-share:hover {
+  transform: rotate(180deg);
+  left: 40%;
+  top: 25%;
 }
 .share .share-in {
   width: 100%;
@@ -514,7 +486,7 @@ footer .coppy-right {
 /*js share*/
 .show-share-in {
   left: 20px;
-  transform: translate(0, 250px) rotate(360deg);
+  transform: translate(0, 200px);
 }
 .show-share-in #click-show-share {
   transform: rotate(45deg);

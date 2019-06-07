@@ -16,11 +16,10 @@ $(document).ready(function(){
 		$("ul li").removeClass("current");
 		$(this).addClass("current");
 		$(".tab-content").hide();
-
 		var tab_id = $(this).find("a").attr("href");
-	// 	// console.log("banda an");
+		// console.log("banda an");
 	$(tab_id ).fadeIn();
-});
+	// back go to start
 	$(window).scroll(function(){
 		if($(this).scrollTop()>200){
 			$(".go-up").fadeIn();
@@ -45,4 +44,4 @@ $(document).ready(function(){
 // *******************************************************************
 
 });
-
+});
