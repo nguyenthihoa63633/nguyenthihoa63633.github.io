@@ -7,7 +7,7 @@ $(document).ready(function(){
 			$('nav').removeClass('fixed-header');
 		}
 	});	
-	// go up scroll Top
+	
 	$(".go-up").click(function(){
 		$("body, html").animate({scrollTop:0}, 800);
 	});
@@ -16,8 +16,10 @@ $(document).ready(function(){
 		$(" nav ul li a").removeClass('active');
 		$(this).addClass('active');
 	});
-	// $("svg.svg-inline--fa.fa-search.fa-w-16").click(function(){
-	// 		// alert("xin chao");
-	// 		$("input").css('display','block');
-	// });
+	$(".menu ul li a ").click(function(){
+		$(".menu ul li a").removeClass('active-menu');
+		$(this).addClass('active-menu');
+	});
+		// khoi tao hieu ung wow
+	new WOW().init();
 });

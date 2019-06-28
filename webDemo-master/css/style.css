@@ -9,9 +9,6 @@ p, h6, h5{
 a.nav-link{
 	transition: 0.4s;
 }
-a.nav-link:hover{
-	color:#222 !important;
-}
 a:hover{
 	text-decoration: none;
 	color:#3EB786;
@@ -21,395 +18,384 @@ a{
 	transition: 0.4s;
 	display: block;
 }
+img{
+	cursor: pointer;
+	width: 100%;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/*defined end*/
 
-	img{
-		cursor: pointer;
-		width: 100%;
-	}
-	body{
-		font-family: 'Roboto', sans-serif;
-	}
-	/*header start*/
-	.form-control, .btn  {
-		box-shadow: none!important;
-	}
-	.input-group{
-		border: none;
-	}
-	/*mobile first*/
-	.mobile-first{
-		background-color:#3EB786 !important;
-		height: 53px;
-	}
+/*header start*/
+.form-control, .btn  {
+	box-shadow: none!important;
+}
+.input-group{
+	border: none;
+}
+/*mobile first start*/
+.menu ul li a.active-menu{
+	background-color: gray;
+	color: #fff;
+}
+.mobile-first{
+	background-color:#3EB786 !important;
+	height: 53px;
+}
+.mobile-first svg.svg-inline--fa.fa-search.fa-w-16 {
+	font-size: 25px;
+	height: 30px;
+	color: #fff;
+}
+.search.col-5.offset-4.text-right {
+	height: 30px;
+	line-height: 30px;
+}
+.search input{
+	outline: none;
+	width: 0px;
+	border-radius: 20px;
+	transition: width .7s ease-in-out;
+	background: #fff;
+	font-family: sans-serif;
+	position: relative;
+	top: -7px;
+	height: 30px;
+}
+.search input:focus{
+	width: 80%;
+	padding-left: 10px;
+	padding-right: 30px;
+	border-color: aqua;
+}
+nav{
+	background-color: #fff;
+	height: 50px;
+	line-height: 50px;
+}
+nav.navbar ul{
+	flex-direction: row !important;
+	justify-content: space-between ;
+	width: 100%;
+}
+nav ul li a.nav-link{
+	padding:0;
+	color: #222;
+	height: 50px;
+}
+img.w-100 {
+	height: 37px;
+}
+ul.nav {
+	height: 40px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.menu ul li a{
+	font-size: 13px;
+}
+.menu ul li a:hover{
+	background-color: gray;
+}
+.menu{
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	display: block;
+}
+.menu-desktop{
+	display: none;
+}
+/*header end*/
 
-	.mobile-first svg.svg-inline--fa.fa-search.fa-w-16 {
-		font-size: 25px;
-		height: 30px;
-		color: #fff;
-	}
-	.search.col-5.offset-4.text-right {
-		height: 30px;
-		line-height: 30px;
-	}
-	.search input{
-		outline: none;
-		width: 0px;
-		border-radius: 20px;
-		transition: width .7s ease-in-out;
-		background: #fff;
+/*main content start*/
+.mobile-main-desc{
+	padding: 40px 0 20px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+hr.d-lock.d-sm-block.d-md-block.d-lg-none.m-0{
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.mobile-main #vietNam, .mobile-main #korea, .mobile-main #food-travel, .mobile-main #learningVietNames{
+	margin-top: 20px;
+}
+.mobile-main h6.title-item {
+	margin: 30px 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+.mobile-main p.text {
+	margin: 10px 0 20px 0;
+}
+.wapper-content {
+	height: 103px;
+	position: relative;
+}
+.title-oclock-heading{
+	font-size: 12px;
+	color: #5A5A5F;
+}
+.mobile-main span.title-oclock {
+	font-size: 12px;
+	color: #5A5A5F;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+}
+a.heading-item {
+	font-weight: 600;
+	font-size: 15px;
+}
+.col-6.col-sm-5.col-md-5 {
+	height: 100px;
+	margin-bottom: 20px;
+}
+.item-2 img.img-fluid {
+	height: 210px;
+	background-position: center center;
+}
+.mobile-main h6.title-heading {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+}
+.col-6.col-sm-5.col-md-5.img-height img.img-fluid {
+	height: 103px;
+}
+section#id-vietNam, #id-learningVietNamese, #id-korea, #id-food-travel  {
+	padding-top: 40px;
+}
+/*main content end*/
+/*footer start*/
+footer .heading-footer {
+	font-size:14px; 
+	margin: auto;
+	color: #fff;
+	padding:20px 0;
+}
+footer.footer-wapper {
+	background: #3EB786;
+	text-align: center;
+}
+.go-up {
+	width: 45px;
+	height: 45px;
+	border: 1px solid  #3EB786;;
+	position: fixed;
+	right: 2%;
+	bottom: 2%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.go-up:hover svg.svg-inline--fa.fa-arrow-up.fa-w-14{
+	top:45%;
+}
+svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #3EB786;
+}
+/*footer end*/
 
-		font-family: sans-serif;
-		position: relative;
-		top: -7px;
-		height: 30px;
-	}
-	.search input:focus{
-		width: 80%;
-		padding-left: 10px;
-		padding-right: 30px;
-		border-color: aqua;
-	}
-
-	nav{
-		background-color: #fff;
-		height: 50px;
-		line-height: 50px;
-	}
-	nav.navbar ul{
-		flex-direction: row !important;
-		justify-content: space-between ;
-		width: 100%;
-	}
-	nav ul li a.nav-link{
-		padding:0;
-		color: #222;
-		height: 50px;
-	}
-	img.w-100 {
-		height: 37px;
-	}
-	ul.nav {
-		height: 40px;
-		justify-content: space-between;
-		flex-wrap: nowrap;
-	}
+/*mmobile end*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
 	.menu ul li a{
-		font-size: 13px;
-
+		font-size: 16px;
 	}
-	.menu ul li a:hover{
-		color: #3EB786 !important;
-	}
+}
+@media only screen and (min-width: 992px){
+	/*header start*/
 	.menu{
-		border-bottom: 1px solid rgba(0,0,0,.3);
-		display: block;
-	}
-	.menu-desktop{
 		display: none;
 	}
-	
+	.menu-desktop{
+		display: block;
+	}
+	.mobile-first{
+		display: none;
+	}
+	a.nav-link:hover{
+		background: #000;
+	}
+	nav{
+		background-color: #3EB786 !important;
+	}
+	nav ul{
+		width: 53% !important;
+	}
+	nav ul li a.nav-link{
+		color: #fff;
+		font-size: 18px;
+		text-transform: capitalize;
+	}
+	.fixed-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 99999;
+	}
+	nav ul li a.nav-link.active{
+		background: #000;
+	}
 	/*header end*/
-	/*main content start*/
-	.mobile-main-desc{
-		padding: 20px 0;
-		border-bottom: 1px solid rgba(0,0,0,.3);
-	}
-	hr.d-lock.d-sm-block.d-md-block.d-lg-none.m-0{
-		border-bottom: 1px solid rgba(0,0,0,.3);
-	}
-	.mobile-main #vietNam, .mobile-main #korea, .mobile-main #food-travel, .mobile-main #learningVietNames{
-		margin-top: 20px;
-	}
-	.mobile-main h6.title-item {
-		margin: 30px 0;
-		font-size: 20px;
+	/*main desc start*/
+	h5.heading-title{
+		font-size: 25px; 
 		font-weight: 600;
+		color: #222;
+		padding-top: 15px;
 	}
-
-	.mobile-main p.text {
-		margin: 10px 0 20px 0;
+	p.heading-content{
+		font-size: 14px;
+	}
+	p.title-img{
+		color:#222222;
+		font-size: 20px;
+		font-weight: 500;
+		cursor: pointer;
+		transition: 0.4s;
+		margin-bottom: 0;
+	}
+	p.title-img:hover{
+		color: #3D7E64;
+	}
+	span.title-oclock{
+		color:#5A5A5F;
+		font-size: 12px;
+		font-weight: 400;
+		display: block;
+	}
+	section h6.section-title{
+		font-size: 24px;
+		font-weight: 600;
+		padding: 50px 0;
+		text-transform: uppercase;
+	}
+	section.main-desc{
+		padding: 30px 0 0;
+	}
+	.main-desc .item-1{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		height: 480px;
+	}
+	.item-2 {
+		height: 383px;
+		overflow: hidden;
+		border-bottom: 1px solid rgba(0,0,0,.4);
+	}
+	.main-desc p.title-img {
+		font-weight: 600;
+		font-size: 16px;
+		padding-top: 30px;
+		height: 102px;
+	}
+	hr {
+		margin:0;
+		border: 0;
+		border-top: 1px solid rgba(0,0,0,.4);
+	}
+	a.section-heading {
+		font-weight: 600;
+		font-size: 19px;
+		padding: 20px 0;
+	}
+	p.section-content {
+		font-size: 14px;
 	}
 	span.title-oclock {
-		font-size: 12px;
-		color: #5A5A5F;
-
+		padding: 20px 0 30px;
 	}
-	a.heading-item {
+	.wapper-point {
+		height: 80px;
+		margin-bottom: 30px;
+	}
+	.wapper-point img.img-fluid {
+		height: 80px;
+		width: 100%;
+	}
+	.wapper-point .row{
+		align-items: center;
+	}
+	.wapper-point .col-lg-8{
+		padding-left: 0;
+	}
+	a.wap-title {
 		font-weight: 600;
-		font-size: 18px;
-		margin-bottom: 25px;
+		font-size: 15px;
 	}
-
-	.col-6.col-sm-5.col-md-5 {
-		height: 100px;
-		margin-bottom: 15px;
+	/*main desc end*/
+	section#food-travel, section#social{
+		background-color: #EDEDED;
+		padding:30px 26px;
 	}
-
-	.item-2 img.img-fluid {
-		height: 210px;
-		background-position: center center;
-	}
-	.mobile-main h6.title-heading {
-		text-transform: uppercase;
+	section#food-travel .food-heading{
+		font-size: 24px;
 		font-weight: 600;
-		font-size: 20px;
+		padding-bottom: 20px;
 	}
-	.col-6.col-sm-5.col-md-5.img-height img.img-fluid {
-		height: 103px;
+	.food-item img {
+		padding: 20px 0;
 	}
-	section#id-vietNam, #id-learningVietNamese, #id-korea, #id-food-travel  {
+	.col-lg-8 {
+		height: 100%;
+	}
+	img.img-fluid.w-100 {
+		height: 100%;
+	}
+	a.food-content {
+		font-weight: 600;
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+	section#mostView .group-most-view{
+		padding:0px 26px;
+	}
+	section#mostView .food-heading{
+		font-size: 24px;
+		font-weight: 600;
+		padding-bottom: 20px;
+		background-color: #EDEDED;
+		margin-top: 30px;
+		padding: 30px 26px;
+	}
+	section#mostView a.most-content {
 		padding-top: 20px;
-	}
-	/*main content end*/
-	/*footer start*/
-	footer .heading-footer {
-		font-size:14px; 
-		margin: auto;
-		color: #fff;
-		padding:20px 0;
+		padding-bottom: 30px;
+		font-size: 17px;
 	}
 
-	footer.footer-wapper {
-		background: #3EB786;
+	section#mostView span.most-page {
+		font-size: 24px;
+		color: #3D7E64;
+	}
+	section#mostView .most-iem.d-lg-flex {
+		align-items: center;
+	}
+	section#social .food-heading{
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	.social-item {
+		background: #fff;
+		margin-bottom: 10px;
+		padding: 10px 0;
 		text-align: center;
 	}
-	.go-up {
-		width: 45px;
-		height: 45px;
-		border: 1px solid  #3EB786;;
-		position: fixed;
-		right: 2%;
-		bottom: 2%;
-		border-radius: 50%;
-		cursor: pointer;
+	.social-item a {
+		font-size: 14px;
+		display: inline-block;
 	}
-
-	.go-up:hover svg.svg-inline--fa.fa-arrow-up.fa-w-14{
-		top:45%;
+	#social .item-color-1{
+		border-bottom: 5px solid #3B5998;
 	}
-	svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		color: #3EB786;
+	#social  .item-color-2{
+		border-bottom: 5px solid #28AAE1;
 	}
-	/*footer end*/
-	/*mmobile end*/
-
-	@media only screen and (max-width: 576px){
-
+	#social .item-color-3{
+		border-bottom: 5px solid #FE1400;
 	}
-	@media only screen and (min-width: 768px) and (max-width: 992px){
-		.menu ul li a{
-		font-size: 16px;
-		
-	}
-	}
-	@media only screen and (min-width: 992px){
-		/*header start*/
-		.menu{
-			display: none;
-		}
-		.menu-desktop{
-			display: block;
-		}
-		.mobile-first{
-			display: none;
-		}
-		nav{
-			background-color: #3EB786 !important;
-		}
-		nav ul{
-			width: 53% !important;
-		}
-		nav ul li a.nav-link{
-			color: #fff;
-			font-size: 18px;
-			text-transform: capitalize;
-		}
-		.fixed-header {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			z-index: 99999;
-		}
-		/*header end*/
-		/*main desc start*/
-		h5.heading-title{
-			font-size: 25px; 
-			font-weight: 600;
-			color: #222;
-			padding-top: 15px;
-		}
-		p.heading-content{
-			font-size: 14px;
-		}
-		p.title-img{
-			color:#222222;
-			font-size: 20px;
-			font-weight: 500;
-			cursor: pointer;
-			transition: 0.4s;
-			margin-bottom: 0;
-		}
-		p.title-img:hover{
-			color: #3D7E64;
-		}
-		span.title-oclock{
-			color:#5A5A5F;
-			font-size: 12px;
-			font-weight: 400;
-			display: block;
-		}
-		section h6.section-title{
-			font-size: 24px;
-			font-weight: 600;
-			padding: 50px 0;
-			text-transform: uppercase;
-		}
-		section.main-desc{
-			padding: 30px 0 0;
-		}
-		.main-desc .item-1{
-			margin-top: 30px;
-			margin-bottom: 30px;
-			height: 480px;
-		}
-		.item-2 {
-			height: 383px;
-			overflow: hidden;
-			border-bottom: 1px solid rgba(0,0,0,.4);
-		}
-		.main-desc p.title-img {
-			font-weight: 600;
-			font-size: 16px;
-			padding-top: 30px;
-			height: 102px;
-		}
-		hr {
-			margin:0;
-			border: 0;
-			border-top: 1px solid rgba(0,0,0,.4);
-		}
-		
-		a.section-heading {
-			font-weight: 600;
-			font-size: 19px;
-			padding: 20px 0;
-		}
-		p.section-content {
-			font-size: 14px;
-		}
-		span.title-oclock {
-			padding: 20px 0 30px;
-		}
-		.wapper-point {
-			height: 80px;
-			/*border: 1px solid red;*/
-			margin-bottom: 30px;
-		}
-		.wapper-point img.img-fluid {
-			height: 80px;
-			width: 100%;
-		}
-		.wapper-point .row{
-			align-items: center;
-		}
-		.wapper-point .col-lg-8{
-			padding-left: 0;
-		}
-		a.wap-title {
-			font-weight: 600;
-			font-size: 15px;
-		}
-		/*main desc end*/
-		section#food-travel, section#social{
-			background-color: #EDEDED;
-			padding:30px 26px;
-		}
-		section#food-travel .food-heading{
-			font-size: 24px;
-			font-weight: 600;
-			padding-bottom: 20px;
-
-		}
-		.food-item img {
-			padding: 20px 0;
-		}
-
-		.col-lg-8 {
-			height: 100%;
-		}
-
-		img.img-fluid.w-100 {
-			height: 100%;
-		}
-
-		a.food-content {
-			font-weight: 600;
-			font-size: 14px;
-			padding-bottom: 20px;
-		}
-		section#mostView .group-most-view{
-			padding:0px 26px;
-		}
-		section#mostView .food-heading{
-			font-size: 24px;
-			font-weight: 600;
-			padding-bottom: 20px;
-			background-color: #EDEDED;
-			margin-top: 30px;
-			padding: 30px 26px;
-		}
-		section#mostView a.most-content {
-			padding-top: 20px;
-			padding-bottom: 30px;
-			font-size: 17px;
-		}
-
-		section#mostView span.most-page {
-			font-size: 24px;
-			color: #3D7E64;
-
-		}
-
-		/*#learningVietNamese{
-			border: 1px solid red;
-
-			}*/
-			section#mostView .most-iem.d-lg-flex {
-				align-items: center;
-			}
-			section#social .food-heading{
-				font-size: 24px;
-				font-weight: 600;
-				margin-bottom: 30px;
-			}
-			.social-item {
-				background: #fff;
-				margin-bottom: 10px;
-
-				padding: 10px 0;
-
-				text-align: center;
-			}
-
-			.social-item a {
-				font-size: 14px;
-				display: inline-block;
-			}
-			#social .item-color-1{
-				border-bottom: 5px solid #3B5998;
-			}
-			#social  .item-color-2{
-
-				border-bottom: 5px solid #28AAE1;
-
-			}
-			#social .item-color-3{
-
-				border-bottom: 5px solid #FE1400;
-			}
-		}
+}
